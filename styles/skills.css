@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+/* body {
+  background: #000;
+  background: linear-gradient(40deg, #000, #222);
+  height: 100%;
+  min-height: 100vh;
+} */
+
+/* ANCHOR CLOUD */
+.content {
+  width: 95%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.tagcloud {
+  margin: 1rem auto;
+  font-size: 18px;
+  border-radius: 200px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.tagcloud--item {
+  padding: 2px 4px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.tagcloud--item:hover {
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  /* border: 1px solid #333; */
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  opacity: 1 !important;
+  z-index: 100 !important;
+}
+
+.light .tagcloud--item {
+  color: #fff;
+}
+
+.light .tagcloud--item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #fff;
+}
+
+/* ANCHOR Navbar*/
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  background-color: rgba(9, 9, 9, 0.2);
+}
+.navlist {
+  width: 78%;
+  /* background-color:black; */
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding: 4px;
+}
+.navlist li {
+  list-style: none;
+  padding: 20px 25px 20px 25px;
+}
+.logo {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  width: 26%;
+  border: 4px rgba(0, 185, 185, 0.822);
+  border-radius: 226px;
+}
+.logo img:hover {
+  border-radius: 250px;
+  border-style: outset;
+}
+.navlist li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+}
+.navlist li a:hover {
+  color: red;
+  font-weight: bolder;
+}
