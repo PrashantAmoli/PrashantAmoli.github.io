@@ -75,6 +75,7 @@ body {
   color: aliceblue;
   max-width: 50%;
   margin: auto;
+  margin-right: 0;
   height: 80%;
   text-align: center;
 }
@@ -89,6 +90,7 @@ body {
 h1,
 h2 {
   margin: 0.5rem auto;
+  text-shadow: 2px 2px 5px darkblue;
 }
 
 .socials {
@@ -112,7 +114,7 @@ img#me {
   /* box-shadow: 0px 0px 12px blue; */
   border-radius: 200px;
   width: 50%;
-  max-width: 180px;
+  max-width: 140px;
   margin: 1rem auto;
 }
 img:hover {
@@ -157,6 +159,7 @@ footer {
 
   .main {
     max-width: 100%;
+    margin: auto;
   }
   .section {
     flex-direction: column-reverse;
@@ -165,5 +168,10 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  /* TagCloud */
+  .tagcloud {
+    margin: auto;
   }
 }
