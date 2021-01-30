@@ -127,13 +127,14 @@
 }
 
 .resume {
-  position: sticky;
+  position: absolute;
   top: 0;
-  align-self: flex-end;
+  right: 0;
+  /* align-self: flex-end; */
   font-size: 1.1rem;
   text-decoration: none;
   font-weight: bolder;
-  margin: 1rem 1rem auto auto;
+  margin: 1.2rem 1.8rem 0 auto;
   background-color: #7070703b;
   border-radius: 20px;
 }

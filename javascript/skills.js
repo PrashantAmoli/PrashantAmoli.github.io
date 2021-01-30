@@ -37,15 +37,15 @@ console.log(` ${width} `)
 let radius
 
 document.addEventListener('DOMContentLoaded', () => {
-  if (window.innerWidth < 350) {
-    radius = 120
-  } else if (window.innerWidth < 450) {
-    radius = 150
+  if (window.innerWidth > 1000) {
+    radius = 220
   } else if (window.innerWidth > 450) {
     radius = 200
     // window.location.reload()
-  } else if (window.innerWidth > 1000) {
-    radius = 250
+  } else if (window.innerWidth < 350) {
+    radius = 120
+  } else if (window.innerWidth < 450) {
+    radius = 150
   }
 
   TagCloud('.content', texts, {
