@@ -1,42 +1,100 @@
-// STUB
-const texts = [
-  'JavaScript',
-  'TypeScript',
-  'CSS',
-  'HTML',
-  'React',
-  'Python',
-  'NodeJS',
-  'Next',
-  'Firebase',
-  'PWA',
-  'React Native',
-  'SASS',
-  'Express',
-]
+// Info Text
 
-const tagCloud = TagCloud('.content', texts, {
-  // radius in px
-  radius: 180,
+// const info = [
+//   'Prashant Amoli. ',
+//   'a Software Developer...',
+//   'an Engineering Student...',
+//   'a Full-Stack Web Developer...',
+// ]
+// let count = 0
+// let index = 0
+// let currentText = ''
+// let letter = ''
 
-  // animation speed  // slow, normal, fast
-  maxSpeed: 'fast',
-  initSpeed: 'fast',
+// function type() {
+//   if (count === info.length) {
+//     count = 0
+//   }
 
-  // 0 = top  // 90 = left  // 135 = right-bottom
-  direction: 135,
+//   currentText = info[count]
+//   letter = currentText.slice(0, ++index)
+//   document.querySelector('#name').textContent = letter
+//   document.querySelector('#info').textContent = letter
 
-  // interact with cursor move on mouse out
-  keep: true,
-})
+//   if (letter.length === currentText.length) {
+//     count++
+//     index = 0
+//   }
+
+//   setTimeout(type, 200)
+// }
+
+// type()
 
 // ANCHOR Responsive Radius Code
 const width = window.innerWidth
 console.log(` ${width} `)
+let radius
+
+document.addEventListener('DOMContentLoaded', () => {
+  if (window.innerWidth < 350) {
+    radius = 120
+  } else if (window.innerWidth < 450) {
+    radius = 150
+  } else if (window.innerWidth > 450) {
+    radius = 200
+    // window.location.reload()
+  } else if (window.innerWidth > 1000) {
+    radius = 250
+  }
+
+  TagCloud('.content', texts, {
+    // radius in px 200 || 150
+    radius: radius,
+
+    // animation speed  // slow, normal, fast
+    maxSpeed: 'fast',
+    initSpeed: 'fast',
+
+    // 0 = top  // 90 = left  // 135 = right-bottom
+    direction: 135,
+
+    // interact with cursor move on mouse out
+    keep: true,
+  })
+})
 
 window.addEventListener('resize', () => {
+  if (window.innerWidth < 500) {
+    radius = 160
+  } else if (window.innerWidth > 450) {
+    radius = 200
+    // window.location.reload()
+  }
   window.location.reload()
 })
+
+// STUB Skills Section
+const texts = [
+  'JavaScript',
+  'TypeScript',
+  'HTML',
+  'CSS',
+  'SASS',
+  'React',
+  'NodeJS',
+  'Express',
+  'Next',
+  'Firebase',
+  'MongoDB',
+  'PWA',
+  'React Native',
+  'Python',
+  'C',
+  'C++',
+]
+
+console.log(`Radius: ${radius} `)
 
 // SECTION Functions
 // switch style

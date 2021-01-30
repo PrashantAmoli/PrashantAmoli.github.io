@@ -15,7 +15,10 @@ body {
   background-blend-mode: darken;
   display: flex;
   align-items: center;
-  min-height: 100vh;
+  min-height: 98vh;
+  margin: 1vh auto;
+  width: 97%;
+  box-shadow: 0 0 12px 3px darkblue;
 }
 
 .navbar {
@@ -66,7 +69,8 @@ body {
   font-weight: bolder;
 }
 
-/*  */
+/* ANCHOR Main Section ********************************/
+
 .main {
   display: flex;
   flex-direction: column;
@@ -74,6 +78,7 @@ body {
   align-items: center;
   color: aliceblue;
   max-width: 50%;
+  min-width: 360px;
   margin: auto;
   margin-right: 0;
   height: 80%;
@@ -102,11 +107,13 @@ h2 {
 
 .socials a img {
   width: 44px;
-  background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 25px;
+  background-color: white;
+  border-radius: 30px;
+  border: 2px outset;
 }
 .socials a img:hover {
-  width: 50px;
+  width: 45px;
+  border: 2px inset;
 }
 
 img#me {
@@ -118,7 +125,7 @@ img#me {
   margin: 1rem auto;
 }
 img:hover {
-  box-shadow: 0 0 10px darkblue;
+  box-shadow: 0 0 12px darkblue;
 }
 
 /* Footer */
@@ -158,8 +165,19 @@ footer {
   }
 
   .main {
-    max-width: 100%;
+    min-width: 99%;
     margin: auto;
+  }
+  h1 {
+    font-size: 1.2rem;
+    font-weight: bolder;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+  .content {
+    margin: auto;
+    margin-top: 0;
   }
   .section {
     flex-direction: column-reverse;
@@ -168,6 +186,12 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .socials a img {
+    width: 42px;
+  }
+  a img:hover {
+    width: 40px;
   }
 
   /* TagCloud */

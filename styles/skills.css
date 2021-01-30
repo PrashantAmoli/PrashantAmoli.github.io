@@ -4,12 +4,36 @@
   box-sizing: border-box;
   color: white;
 }
-/* body {
-  background: #000;
-  background: linear-gradient(40deg, #000, #222);
-  height: 100%;
-  min-height: 100vh;
-} */
+/* ANCHOR Typing Effect */
+
+.typing {
+  position: relative;
+}
+
+.typing::after {
+  content: '';
+  width: 3px;
+  height: 1.1rem;
+  right: -6px;
+  position: relative;
+  border-right: 3px solid white;
+  animation: blink 1s infinite ease-in-out;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.33;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 /* ANCHOR CLOUD */
 .content {
@@ -100,4 +124,16 @@
 .navlist li a:hover {
   color: red;
   font-weight: bolder;
+}
+
+.resume {
+  position: sticky;
+  top: 0;
+  align-self: flex-end;
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: bolder;
+  margin: 1rem 1rem auto auto;
+  background-color: #7070703b;
+  border-radius: 20px;
 }
