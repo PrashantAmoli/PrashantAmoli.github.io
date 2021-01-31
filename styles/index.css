@@ -187,11 +187,15 @@ footer {
     justify-content: center;
     align-items: center;
   }
+  img#me{
+    max-width: 120px;
+    margin: .5rem auto;
+  }
   .socials a img {
-    width: 42px;
+    width: 36px;
   }
   a img:hover {
-    width: 40px;
+    width: 38px;
   }
 
   /* TagCloud */
