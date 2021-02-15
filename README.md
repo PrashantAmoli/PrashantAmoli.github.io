@@ -5,14 +5,15 @@
 <a href="https://www.linkedin.com/in/prashantamoli/">
   <img align="left" alt="Prashant's Linkded-in" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />
 </a>
-<a href="https://www.instagram.com/prashant21__/">
+<a href="https://www.instagram.com/prashant21__/" float="right" align="center">
   <img align="left" alt="Prashant's Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />
 </a>
 
+<br/>
 <hr />
 <br />
 
-**Languages and Tools:**  
+**Skills and Interests:**  
 
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
 <code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"></code>
