@@ -37,61 +37,61 @@ console.log(` ${width} `)
 let radius
 
 document.addEventListener('DOMContentLoaded', () => {
-  if (window.innerWidth > 1000) {
-    radius = 220
-  } else if (window.innerWidth > 450) {
-    radius = 200
-    // window.location.reload()
-  } else if (window.innerWidth < 350) {
-    radius = 120
-  } else if (window.innerWidth < 450) {
-    radius = 150
-  }
+	if (window.innerWidth > 1000) {
+		radius = 220
+	} else if (window.innerWidth > 450) {
+		radius = 200
+		// window.location.reload()
+	} else if (window.innerWidth < 350) {
+		radius = 120
+	} else if (window.innerWidth < 450) {
+		radius = 150
+	}
 
-  TagCloud('.content', texts, {
-    // radius in px 200 || 150
-    radius: radius,
+	TagCloud('.content', texts, {
+		// radius in px 200 || 150
+		radius: radius,
 
-    // animation speed  // slow, normal, fast
-    maxSpeed: 'fast',
-    initSpeed: 'fast',
+		// animation speed  // slow, normal, fast
+		maxSpeed: 'fast',
+		initSpeed: 'fast',
 
-    // 0 = top  // 90 = left  // 135 = right-bottom
-    direction: 135,
+		// 0 = top  // 90 = left  // 135 = right-bottom
+		direction: 135,
 
-    // interact with cursor move on mouse out
-    keep: true,
-  })
+		// interact with cursor move on mouse out
+		keep: true,
+	})
 })
 
 window.addEventListener('resize', () => {
-  if (window.innerWidth < 500) {
-    radius = 160
-  } else if (window.innerWidth > 450) {
-    radius = 200
-    // window.location.reload()
-  }
-  window.location.reload()
+	if (window.innerWidth < 500) {
+		radius = 160
+	} else if (window.innerWidth > 450) {
+		radius = 200
+		// window.location.reload()
+	}
+	window.location.reload()
 })
 
 // STUB Skills Section
 const texts = [
-  'JavaScript',
-  'TypeScript',
-  'HTML',
-  'CSS',
-  'SASS',
-  'React',
-  'NodeJS',
-  'Express',
-  'Next',
-  'Firebase',
-  'MongoDB',
-  'PWA',
-  'React Native',
-  'Python',
-  'C',
-  'C++',
+	'JavaScript',
+	'TypeScript',
+	'HTML',
+	'CSS',
+	'ReactJS',
+	'NodeJS',
+	'Express',
+	'NextJS',
+	'Firebase',
+	'MongoDB',
+	'SQL',
+	'PWA',
+	'React Native',
+	'Python',
+	'C/C++',
+	'Git',
 ]
 
 console.log(`Radius: ${radius} `)
@@ -99,58 +99,58 @@ console.log(`Radius: ${radius} `)
 // SECTION Functions
 // switch style
 function toDefault() {
-  document.body.classList.remove('light')
+	document.body.classList.remove('light')
 }
 function toLight() {
-  document.body.classList.add('light')
+	document.body.classList.add('light')
 }
 // add / remove tag
 function addTag() {
-  if (!tc) return
-  texts.push('New')
-  tc.update(texts)
+	if (!tc) return
+	texts.push('New')
+	tc.update(texts)
 }
 function removeTag() {
-  if (!tc) return
-  texts.pop()
-  tc.update(texts)
+	if (!tc) return
+	texts.pop()
+	tc.update(texts)
 }
 var otherTcs = []
 // create and destroy tagcloud
 function toCreate() {
-  if (otherTcs.length >= 3) return
-  otherTcs.push(TagCloud('.content', texts))
+	if (otherTcs.length >= 3) return
+	otherTcs.push(TagCloud('.content', texts))
 }
 function toDestroy() {
-  var last = otherTcs[otherTcs.length - 1]
-  if (!last) return
-  last.destroy()
-  otherTcs.pop()
+	var last = otherTcs[otherTcs.length - 1]
+	if (!last) return
+	last.destroy()
+	otherTcs.pop()
 }
 // pause and resume tagcloud animation
 function pause() {
-  ;[].concat(tc, otherTcs).forEach(function (e) {
-    return e.pause()
-  })
+	;[].concat(tc, otherTcs).forEach(function (e) {
+		return e.pause()
+	})
 }
 function resume() {
-  ;[].concat(tc, otherTcs).forEach(function (e) {
-    return e.resume()
-  })
+	;[].concat(tc, otherTcs).forEach(function (e) {
+		return e.resume()
+	})
 }
 // add and remove clickEvent
 function clickEventHandler(e) {
-  if (e.target.className === 'tagcloud--item') {
-    window.open(`https://www.google.com/search?q=${e.target.innerText}`, '_blank')
-  }
+	if (e.target.className === 'tagcloud--item') {
+		window.open(`https://www.google.com/search?q=${e.target.innerText}`, '_blank')
+	}
 }
 function addClickEvent() {
-  var rootEl = document.querySelector('.content')
-  rootEl.addEventListener('click', clickEventHandler)
+	var rootEl = document.querySelector('.content')
+	rootEl.addEventListener('click', clickEventHandler)
 }
 function removeClickEvent() {
-  var rootEl = document.querySelector('.content')
-  rootEl.removeEventListener('click', clickEventHandler)
+	var rootEl = document.querySelector('.content')
+	rootEl.removeEventListener('click', clickEventHandler)
 }
 
 // !SECTION ------------------------------------------
