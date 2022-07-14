@@ -67,8 +67,8 @@ document.addEventListener('DOMContentLoaded', () => {
 window.addEventListener('resize', () => {
   if (window.innerWidth < 500) {
     radius = 160;
-  } else if (window.innerWidth > 450) {
-    radius = 200;
+  } else if (window.innerWidth > 500) {
+    radius = 600;
     // window.location.reload()
   }
   window.location.reload();

@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+.projects {
+  /* background-color: #947eb0; */
+  justify-content: center;
+  display: flex;
+  min-height: 90vh;
+}
+
+.box {
+  /* background-color: trans; */
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 1000px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+body {
+  padding-top: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-gap: 20px;
+}
+
+.grid > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(187, 163, 206, 1);
+  background-color: transparent;
+  padding: 5% 0;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.grid .text {
+  padding: 10px 20px 20px 30px;
+  /*   color: #808285; */
+  margin-bottom: 20px;
+}
+
+.grid .btn {
+  margin-top: 20px;
+  background-color: #04001a;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  padding: 5px 10px 5px 10px;
+  line-height: 5;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  z-index: 12;
+}
+
+.btn:hover {
+  background: #2b0004;
+  transition-duration: 80ms;
+}
+
+h3 {
+  text-align: left;
+}

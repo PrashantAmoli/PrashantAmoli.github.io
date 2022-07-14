@@ -38,13 +38,14 @@
 /* ANCHOR CLOUD */
 .content {
   width: 95%;
-  max-width: 500px;
-  margin: 0 auto;
+  /* max-width: 500px; */
+  margin: 3rem auto;
+  min-height: 90vh;
 }
 
 .tagcloud {
   margin: 1rem auto;
-  margin-left: 0;
+  /* margin-left: 0; */
   font-size: 18px;
   border-radius: 200px;
   background-color: rgba(0, 0, 0, 0.2);
