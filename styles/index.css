@@ -74,7 +74,9 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4 {
   margin: 0.5rem auto;
   text-shadow: 2px 2px 5px darkblue;
 }
