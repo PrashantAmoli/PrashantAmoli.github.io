@@ -71,3 +71,35 @@ body {
 h3 {
   text-align: left;
 }
+
+/* Education */
+/* .education {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  min-height: 60vh;
+  background-image: url('https://images.shiksha.com/mediadata/images/1576563781phpQj94TQ.jpeg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-blend-mode: difference;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+} */
+
+.education {
+  width: 60%;
+}
+
+.university {
+  position: sticky;
+  z-index: 2;
+}
+
+@media only screen and (max-width: 800px) {
+  .education {
+    width: 100%;
+  }
+}
