@@ -54,11 +54,11 @@ body {
 .main {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   color: aliceblue;
-  max-width: 50%;
-  min-width: 360px;
+  /* max-width: 50%; */
+  min-width: 444px;
   margin: auto;
   /* margin-right: 0; */
   min-height: 80vh;
@@ -101,7 +101,7 @@ img#me {
   align-items: center;
   border-radius: 200px;
   width: 50%;
-  max-width: 140px;
+  max-width: 250px;
   margin: 1rem auto;
   position: relative;
 }
