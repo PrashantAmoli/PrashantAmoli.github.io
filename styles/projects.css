@@ -44,6 +44,7 @@ body {
   padding: 10px 20px 20px 30px;
   /*   color: #808285; */
   margin-bottom: 20px;
+  min-height: 66%;
 }
 
 .grid .btn {
@@ -58,6 +59,8 @@ body {
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
   z-index: 12;
+  position: relative;
+  left: 40%;
 }
 
 .btn:hover {

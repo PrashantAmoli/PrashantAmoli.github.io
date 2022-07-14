@@ -112,13 +112,23 @@ img:hover {
 /* Footer */
 
 footer {
-  position: absolute;
+  /* position: absolute;
   bottom: 0;
   text-align: center;
   width: 100%;
   font-size: 1.2rem;
   background-color: rgba(0, 0, 0, 0.2);
-  padding: 0.5rem;
+  padding: 0.5rem; */
+  /* position: absolute; */
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #00000000;
+  color: white;
+  text-align: center;
+  z-index: 1;
+  margin-top: 3rem;
 }
 
 @media only screen and (max-width: 800px) {

@@ -46,7 +46,7 @@ a {
   -moz-transition: -moz-transform 0.2s;
   transition: transform 0.2s;
   background-color: rgba(234, 242, 227, 0.9);
-  z-index: 1;
+  z-index: 15;
 }
 .cd-vertical-nav a {
   display: block;
@@ -278,4 +278,10 @@ a {
   -ms-transform: translateX(0);
   -o-transform: translateX(0);
   transform: translateX(0);
+}
+
+@media only screen and (max-width: 800px) {
+  .cd-vertical-nav{
+    display: none;
+  }
 }
