@@ -47,6 +47,7 @@ a {
   transition: transform 0.2s;
   background-color: rgba(234, 242, 227, 0.9);
   z-index: 15;
+  user-select: none;
 }
 .cd-vertical-nav a {
   display: block;
@@ -134,10 +135,11 @@ a {
 .cd-vertical-nav a::before {
   /* filled circle */
   top: 0;
-  height: 32px;
-  width: 32px;
+  height: 25px;
+  width: 25px;
   border-radius: 50%;
-  background: #eaf2e3;
+  /* background: #eaf2e3; */
+  box-shadow: 0 0 2px 2px darkblue;
   -webkit-transform: translateX(-50%) scale(0.25);
   -moz-transform: translateX(-50%) scale(0.25);
   -ms-transform: translateX(-50%) scale(0.25);
@@ -164,7 +166,9 @@ a {
 }
 .cd-vertical-nav a.active::before,
 .no-touch .cd-vertical-nav a:hover::before {
-  background-color: #c0a672;
+  /* background-color: #c0a672; */
+  background-color: transparent;
+  box-shadow: 0 0 2px 2px blue;
 }
 .cd-vertical-nav li:first-of-type a::after {
   background-position: 0px -48px;

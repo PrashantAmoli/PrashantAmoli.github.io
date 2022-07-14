@@ -39,7 +39,7 @@
 .content {
   width: 95%;
   /* max-width: 500px; */
-  margin: 3rem auto;
+  margin: 0rem auto 6rem auto;
   min-height: 60vh;
 }
 
