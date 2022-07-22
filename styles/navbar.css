@@ -10,6 +10,13 @@
   -moz-osx-font-smoothing: grayscale;
   font-size: 14px;
 } */
+
+.menu-icon {
+  position: fixed;
+  right: 0;
+  padding: 1.3rem;
+}
+
 a {
   color: #c0a672;
   text-decoration: none;
@@ -287,5 +294,9 @@ a {
 @media only screen and (max-width: 800px) {
   .cd-vertical-nav {
     display: none;
+  }
+  .menu-icon {
+    display: none;
+    visibility: hidden;
   }
 }
