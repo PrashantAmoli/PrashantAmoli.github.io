@@ -21,6 +21,7 @@ body {
   margin: 0 auto;
   /* width: 97%; */
   /* box-shadow: 0 0 12px 3px darkblue; */
+  user-select: none;
 }
 .container {
   background-size: cover;
