@@ -5,7 +5,7 @@ canvas {
 }
 
 canvas:hover {
-  cursor: url('https://w7.pngwing.com/pngs/533/502/png-transparent-tech-spaceship-tech-spaceship-high-tech-space-ship.png');
+  cursor: url('../img/spaceship.png');
 }
 
 /* ---- particles.js container ---- */
