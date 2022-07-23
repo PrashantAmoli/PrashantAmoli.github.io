@@ -52,6 +52,27 @@ body {
 
 /* ANCHOR Main Section ********************************/
 
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.2;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .main {
   display: flex;
   flex-direction: row;
@@ -65,6 +86,8 @@ body {
   min-height: 66vh;
   text-align: center;
   padding: 12rem auto;
+
+  animation: blink 3s ease-in-out;
 }
 .firsthalf {
   width: 80%;
@@ -95,10 +118,14 @@ h4 {
   background-color: white;
   border-radius: 30px;
   border: 2px outset;
+
+  transition: transform 0.3s;
 }
 .socials a img:hover {
   width: 45px;
   border: 2px inset;
+
+  transform: scale(1.1);
 }
 
 img#me {
