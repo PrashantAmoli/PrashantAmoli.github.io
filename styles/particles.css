@@ -5,7 +5,8 @@ canvas {
 }
 
 canvas:hover {
-  cursor: url('../img/spaceship.png');
+  /* cursor: url('../img/spaceship.png'); */
+  cursor: url('https://e7.pngegg.com/pngimages/637/375/png-clipart-man-riding-on-spaceship-illustration-website-service-rocket-man-rocket-rocket-english-computer-wallpaper.png');
 }
 
 /* ---- particles.js container ---- */
