@@ -52,7 +52,7 @@ body {
 
 /* ANCHOR Main Section ********************************/
 
-@keyframes blink {
+@keyframes blink1 {
   0% {
     opacity: 0;
   }
@@ -60,7 +60,10 @@ body {
     opacity: 0;
   }
   40% {
-    opacity: 0.2;
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.3;
   }
   60% {
     opacity: 0.6;
@@ -87,7 +90,7 @@ body {
   text-align: center;
   padding: 12rem auto;
 
-  animation: blink 3s ease-in-out;
+  animation: blink1 3s ease-in-out;
 }
 .firsthalf {
   width: 80%;

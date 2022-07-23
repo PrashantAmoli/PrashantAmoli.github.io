@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-@keyframes blink {
+@keyframes blink2 {
   0% {
     opacity: 0;
   }
@@ -34,7 +34,7 @@
 }
 .projects:hover {
   display: flex;
-  /* animation: blink 30s infinite ease-in-out; */
+  /* animation: blink2 30s infinite ease-in-out; */
 }
 
 .box {
