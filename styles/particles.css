@@ -13,10 +13,10 @@ canvas:hover {
 
 #particles-js {
   /* position: absolute; */
-  position: fixed;
-  /* width: 100vh; */
-  height: 100%;
   /* background-color: black; */
+  /* width: 100vh; */
+  position: fixed;
+  height: 100%;
   background-image: url('');
   background-blend-mode: darken;
   background-repeat: no-repeat;
