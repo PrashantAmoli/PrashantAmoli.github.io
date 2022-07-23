@@ -4,6 +4,10 @@ canvas {
   z-index: -12;
 }
 
+canvas:hover {
+  cursor: url('https://w7.pngwing.com/pngs/533/502/png-transparent-tech-spaceship-tech-spaceship-high-tech-space-ship.png');
+}
+
 /* ---- particles.js container ---- */
 
 #particles-js {
