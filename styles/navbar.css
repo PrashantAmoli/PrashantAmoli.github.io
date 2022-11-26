@@ -11,15 +11,19 @@
   font-size: 14px;
 } */
 
+.fa {
+  position: fixed;
+}
+
 .menu-icon {
   position: fixed;
   right: 0;
-  padding: 1.3rem;
+  padding: 1.1rem;
 }
 
 .fa-bars:before {
-    content: "\f0c9";
-    font-size: 1.75rem;
+  content: '\f0c9';
+  font-size: 1.75rem;
 }
 
 a {
