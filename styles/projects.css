@@ -1,171 +1,150 @@
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 @keyframes blink2 {
-  0% {
-    opacity: 0;
-  }
-  5% {
-    opacity: 0.4;
-  }
-  15% {
-    opacity: 0.6;
-  }
-  10% {
-    opacity: 0.8;
-  }
-  20% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 0.8;
-  }
-  100% {
-    opacity: 0.7;
-  }
+	0% {
+		opacity: 0;
+	}
+	5% {
+		opacity: 0.4;
+	}
+	15% {
+		opacity: 0.6;
+	}
+	10% {
+		opacity: 0.8;
+	}
+	20% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 0.8;
+	}
+	100% {
+		opacity: 0.7;
+	}
 }
 
 .projects {
-  /* background-color: #947eb0; */
-  justify-content: center;
-  display: flex;
-  min-height: 90vh;
+	/* background-color: #947eb0; */
+	justify-content: center;
+	display: flex;
+	min-height: 90vh;
 }
 .projects:hover {
-  display: flex;
-  /* animation: blink2 30s infinite ease-in-out; */
+	display: flex;
+	/* animation: blink2 30s infinite ease-in-out; */
 }
 
 .box {
-  /* background-color: trans; */
-  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-  padding: 30px;
-  max-width: 1000px;
+	/* background-color: trans; */
+	box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	padding: 30px;
+	max-width: 1000px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 
 body {
-  font-family: 'Roboto', sans-serif;
-  color: white;
+	font-family: 'Roboto', sans-serif;
+	color: white;
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-  grid-gap: 20px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+	grid-gap: 20px;
 }
 
 @keyframes bounce {
-  0%,
-  20%,
-  40%,
-  60%,
-  80%,
-  100% {
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
-  }
-  80% {
-    /* Right */
-    /* -webkit-transform: translateX(20px);
-    -ms-transform: translateX(20px);
-    transform: translateX(20px); */
-    -webkit-transform: translateY(5px);
-    -ms-transform: translateY(5px);
-    transform: translateY(5px);
-  }
-  60% {
-    -webkit-transform: translateY(15px);
-    -ms-transform: translateY(15px);
-    transform: translateY(15px);
-    /* left */
-    /* -webkit-transform: translateX(-20px);
-    -ms-transform: translateX(-20px);
-    transform: translateX(-20px); */
-  }
-  40% {
-    /* Up */
-    -webkit-transform: translateY(5px);
-    -ms-transform: translateY(5px);
-    transform: translateY(5px);
-  }
-  20% {
-    /* Down */
-    -webkit-transform: translateY(-35px);
-    -ms-transform: translateY(-35px);
-    transform: translateY(-35px);
-  }
-  0% {
-    -webkit-transform: translateY(-10);
-    -ms-transform: translateY(-10);
-    transform: translateY(-10);
-  }
+	0%,
+	40%,
+	70%,
+	100% {
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateY(0);
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+		transform: translateX(0);
+	}
+	70% {
+		/* Right */
+		-webkit-transform: translateY(-5px);
+		-ms-transform: translateY(-5px);
+		transform: translateY(-5px);
+	}
+	40% {
+		-webkit-transform: translateY(-10px);
+		-ms-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+	0% {
+		-webkit-transform: translateY(-5px);
+		-ms-transform: translateY(-5px);
+		transform: translateY(-5px);
+	}
 }
 
 .grid > article {
-  border: 1px solid #ccc;
-  box-shadow: 0 0 6px 1px rgba(187, 163, 206, 1);
-  background-color: transparent;
-  padding: 5% 0;
-  border-radius: 20px;
-  z-index: 1;
-  user-select: none;
+	border: 1px solid #ccc;
+	background-color: transparent;
+	box-shadow: 0 0 6px 2px inset rgb(201, 189, 211);
+	padding: 5% 0;
+	border-radius: 20px;
+	z-index: 1;
+	user-select: none;
 }
 
 .grid > article:hover {
-  border: 1px solid rgb(221, 220, 220);
-  box-shadow: 0 0 6px 2px inset rgb(201, 189, 211);
-  position: relative;
+	border: 1px solid rgb(221, 220, 220);
+	box-shadow: 0 0 6px 1px rgba(187, 163, 206, 1);
+	position: relative;
 
-  -webkit-animation-name: bounce;
-  animation-name: bounce;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  /* animation-iteration-count: infinite; */
-  /* -webkit-animation-iteration-count: infinite; */
+	-webkit-animation-name: bounce;
+	animation-name: bounce;
+	-webkit-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
+	/* animation-iteration-count: infinite; */
+	/* -webkit-animation-iteration-count: infinite; */
 }
 
 .grid .text {
-  padding: 10px 20px 20px 30px;
-  /*   color: #808285; */
-  margin-bottom: 20px;
-  min-height: 66%;
+	padding: 10px 20px 20px 30px;
+	/*   color: #808285; */
+	margin-bottom: 20px;
+	min-height: 66%;
 }
 
 .grid .btn {
-  margin-top: 20px;
-  background-color: #04001a;
-  border: 0;
-  border-radius: 5px;
-  color: white;
-  font-size: 15px;
-  padding: 5px 10px 5px 10px;
-  line-height: 5;
-  font-family: 'Roboto', sans-serif;
-  text-decoration: none;
-  z-index: 12;
-  position: relative;
-  left: 40%;
+	margin-top: 20px;
+	background-color: #04001a;
+	border: 0;
+	border-radius: 5px;
+	color: white;
+	font-size: 15px;
+	padding: 5px 10px 5px 10px;
+	line-height: 5;
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	z-index: 12;
+	position: relative;
+	left: 40%;
 }
 
 .btn:hover {
-  background: #2b0004;
-  transition-duration: 80ms;
+	background: #2b0004;
+	transition-duration: 80ms;
 }
 
 h3 {
-  text-align: left;
+	text-align: left;
 }
 
 /* Education */
@@ -186,23 +165,23 @@ h3 {
 } */
 
 .education {
-  width: 60%;
+	width: 60%;
 }
 
 .university {
-  position: sticky;
-  z-index: 2;
+	position: sticky;
+	z-index: 2;
 }
 
 .course {
-  text-align: left;
-  font-size: 0.9rem;
+	text-align: left;
+	font-size: 0.9rem;
 }
 @media only screen and (max-width: 800px) {
-  .education {
-    width: 100%;
-  }
-  /* .course {
+	.education {
+		width: 100%;
+	}
+	/* .course {
     text-align: center;
   } */
 }
