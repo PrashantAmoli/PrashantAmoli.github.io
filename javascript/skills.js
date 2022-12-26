@@ -33,19 +33,15 @@
 
 // ANCHOR Responsive Radius Code
 const width = window.innerWidth;
-console.log(` ${width} `);
 let radius;
 
 document.addEventListener('DOMContentLoaded', () => {
-	if (window.innerWidth > 1000) {
-		radius = 220;
-	} else if (window.innerWidth > 450) {
-		radius = 200;
-		// window.location.reload()
-	} else if (window.innerWidth < 350) {
-		radius = 120;
-	} else if (window.innerWidth < 450) {
-		radius = 150;
+	if (window.innerWidth < 450) {
+		radius = 175;
+	} else if (window.innerWidth > 450 && window.innerWidth < 800) {
+		radius = 250;
+	} else {
+		radius = 300;
 	}
 
 	TagCloud('.content', texts, {
@@ -65,13 +61,13 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 window.addEventListener('resize', () => {
-	if (window.innerWidth < 500) {
-		radius = 160;
-	} else if (window.innerWidth > 500) {
-		radius = 1200;
-		// window.location.reload()
+	if (window.innerWidth < 450 && radius !== 175) {
+		window.location.reload();
+	} else if (window.innerWidth > 450 && window.innerWidth < 800 && radius !== 250) {
+		window.location.reload();
+	} else if (window.innerWidth > 800 && radius !== 300) {
+		window.location.reload();
 	}
-	window.location.reload();
 });
 
 // STUB Skills Section
@@ -94,6 +90,10 @@ const texts = [
 	'PWA',
 	'Solidity',
 	'Blockchain',
+	'Truffle',
+	'Hardhat',
+	'NFT',
+	'Ethereum',
 ];
 
 console.log(`Radius: ${radius} `);
